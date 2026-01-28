@@ -106,42 +106,8 @@ public class BTTH {
                     }
                     break;
                 case 5:
-                    System.out.println("Nhập từ khóa tìm kiếm: ");
-                    String keyword = sc.nextLine().toLowerCase();
-                    boolean foundSearch = false;
-                    for (int i = 0; i < current; i++) {
-                        if (title[i].toLowerCase().contains(keyword)) {
-                            System.out.println("--------------------------");
-                            System.out.println("ID: " + ids[i]);
-                            System.out.println("Title: " + title[i]);
-                            System.out.println("Quantity: " + quantity[i]);
-                            System.out.println("--------------------------");
-                            foundSearch = true;
-                        }
-                    }
-                    if (!foundSearch) {
-                        System.err.println("Không tìm thấy sách nào!");
-                    }
                     break;
                 case 6:
-                    for (int i = 0; i < current - 1; i++) {
-                        for (int j = i + 1; j < current; j++) {
-                            if (quantity[i] < quantity[j]) {
-                                int tempQ = quantity[i];
-                                quantity[i] = quantity[j];
-                                quantity[j] = tempQ;
-
-                                int tempId = ids[i];
-                                ids[i] = ids[j];
-                                ids[j] = tempId;
-
-                                String tempT = title[i];
-                                title[i] = title[j];
-                                title[j] = tempT;
-                            }
-                        }
-                    }
-                    System.out.println("Đã sắp xếp theo số lượng giảm dần!");
                     break;
                 case 7:
                     System.out.println("Thoát chương trình...");
