@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Btth_ss5 {
+public class BTTH_SS5 {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
